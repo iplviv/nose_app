@@ -1,5 +1,5 @@
-hooks:
-  post_worker: "cp $HOME/nosetests.json $HOME/results/$TDDIUM_SESSION_ID/session/"
+#hooks:
+#  pre_setup: "cp /tmp/abc /tmp/ABC"
 
 :ruby_version: 'ruby-2.1.2'
 
@@ -7,9 +7,28 @@ hooks:
   python_version: 2.7
   pip_requirements_file: requirements.txt
 
-:tests:
-- type: nosetests
-  mode: basic
-  output: exit-status
-  files:
-    - "test/*_test.py"
+plan:
+- first
+- second
+
+profiles:
+
+  first:
+    environment:
+      MY_PROFILE: "first"
+    :tests:
+    - type: nosetests
+      mode: basic
+      output: exit-status
+      files:
+        - "test/*_test.py"
+
+  second:
+    environment:
+      MY_PROFILE: "second"
+    :tests:
+    - type: nosetests
+      mode: basic
+      output: exit-status
+      files:
+        - "test/*_test2.py"
