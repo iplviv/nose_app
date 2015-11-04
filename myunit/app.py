@@ -6,5 +6,6 @@ class App(object):
     self.var = var
 
   def get_var(self):
-    time.sleep(60);
+    print "Sleeping 60 seconds..."
+    time.sleep(60)
     return self.var
