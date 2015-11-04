@@ -3,7 +3,7 @@ import time
 class App(object):
 
   def __init__(self, var):
-    self.var = var
+    self.var = var + 1
 
   def get_var(self):
     print "Sleeping 60 seconds..."
