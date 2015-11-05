@@ -1,7 +1,4 @@
-#hooks:
-#  pre_setup: "cp /tmp/abc /tmp/ABC"
-
-:ruby_version: 'ruby-2.1.2'
+:ruby_version: 'ruby-2.1.5'
 
 :python:
   python_version: 2.7
