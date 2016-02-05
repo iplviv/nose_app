@@ -1,8 +1,10 @@
-:ruby_version: 'ruby-2.1.5'
+ruby_version: 'ruby-2.1.5'
 
-:python:
+python:
   python_version: 2.7
   pip_requirements_file: requirements.txt
+
+worker_limit: 2
 
 plan:
 - first
