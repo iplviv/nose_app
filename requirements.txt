@@ -1,9 +1,1 @@
 nose
-app
-git
-space
-end
-six
-seven
-eight
-nine
