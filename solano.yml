@@ -31,3 +31,6 @@ profiles:
       output: exit-status
       files:
         - "test/*_test2.py"
+
+notify:
+- channel: webhook
