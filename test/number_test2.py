@@ -8,4 +8,4 @@ def three_test():
   assert 1 + 2
 
 def four_test():
-  assert 16 == 4 * 4
+  assert 16 == 4 + 4
