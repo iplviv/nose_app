@@ -4,12 +4,17 @@ python:
   python_version: 2.7
   pip_requirements_file: requirements.txt
 
-:tests:
+tests:
 - type: nosetests
   mode: basic
   output: exit-status
   files:
     - "test/*_test*.py"
+- ls -l /tmp/a ; curl --silent --output /dev/stderr --write-out "%{http_code}" www.google.com
 
 notify:
 - channel: webhook
+
+mysql:
+  version: '5.5'
+  encoding: 'utf8mb4'
