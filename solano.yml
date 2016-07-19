@@ -11,7 +11,7 @@ tests:
   files:
     - "test/*_test*.py"
 - ls -l /tmp/a ; curl --silent --output /dev/stderr --write-out "%{http_code}" www.google.com
-- cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 1024 | head -1025 > /dev/stdout
+- cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 128 | head -10000 > /dev/stdout
 
 notify:
 - channel: webhook
