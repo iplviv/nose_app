@@ -14,6 +14,7 @@ tests:
   #- cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 64 | head -16385 > /dev/stdout
 - ls -l /home/
 - bash -c "ls -lh /home/"
+- echo Hello World!
 
 notify:
 - channel: webhook
