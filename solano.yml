@@ -1,5 +1,9 @@
 ruby_version: 'ruby-2.1.5'
 
+system:
+  debug:
+    execsrv: true
+
 python:
   python_version: 2.7
   pip_requirements_file: requirements.txt
