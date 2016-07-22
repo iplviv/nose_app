@@ -14,11 +14,14 @@ tests:
   output: exit-status
   files:
     - "test/*_test*.py"
-- ls -l /tmp/a ; curl --silent --output /dev/stderr --write-out "%{http_code}" office-dinner.com/missing
+      #- ls -l /tmp/a ; curl --silent --output /dev/stderr --write-out "%{http_code}" office-dinner.com/missing
   #- cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 64 | head -16385 > /dev/stdout
-- ls -l /home/
-- bash -c "ls -lh /home/"
-- echo Hello World!
+- type: custom
+  command: ls -l /home/
+  invocation: single
+  output: exit-status
+  #- bash -c "ls -lh /home/"
+  #- echo Hello World!
 
 notify:
 - channel: webhook
