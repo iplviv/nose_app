@@ -23,6 +23,9 @@ tests:
   #- bash -c "ls -lh /home/"
   #- echo Hello World!
 
+rerun_list:
+  - test/*test2*.py: 3
+
 notify:
 - channel: webhook
 
