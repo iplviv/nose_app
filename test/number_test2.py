@@ -8,4 +8,10 @@ def three_test():
   assert 1 + 2
 
 def four_test():
-  assert 16 == 4 * 4
+  import time
+  if time.time() / 60 % 2 > 1.5:
+    result = 15
+  else:
+    result = 16
+  
+  assert result == 4 * 4
