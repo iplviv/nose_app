@@ -1,11 +1,11 @@
 :ruby_version: 'ruby-2.1.5'
 
 :python:
-  python_version: 2.7
+  python_version: 2.6
   pip_requirements_file: requirements.txt
 
 hooks:
-  package_setup: "pip install -r requirements.txt"
+  package_setup: "sudo pip install -U pip && pip install -r requirements.txt"
 
 plan:
 - first
