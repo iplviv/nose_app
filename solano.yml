@@ -2,7 +2,7 @@
 
 :python:
   python_version: 2.6
-  pip_requirements_file: requirements.txt
+#  pip_requirements_file: requirements.txt
 
 hooks:
   package_setup: "pip install -U pip && pip install -r requirements.txt"
