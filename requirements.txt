@@ -1,2 +1,2 @@
 nose
-git+git@github.com:solanolabs/sphinx.git#egg=solano-sphinx
+git+git://github.com/solanolabs/sphinx#egg=solano-sphinx
