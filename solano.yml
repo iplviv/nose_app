@@ -4,28 +4,6 @@
   python_version: 2.7
   pip_requirements_file: requirements.txt
 
-plan:
-- first
-- second
+tests:
+  - PYTHONPATH=. python test/myunit_app_test.py
 
-profiles:
-
-  first:
-    environment:
-      MY_PROFILE: "first"
-    :tests:
-    - type: nosetests
-      mode: basic
-      output: exit-status
-      files:
-        - "test/*_test.py"
-
-  second:
-    environment:
-      MY_PROFILE: "second"
-    :tests:
-    - type: nosetests
-      mode: basic
-      output: exit-status
-      files:
-        - "test/*_test2.py"

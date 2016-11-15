@@ -10,3 +10,7 @@ class MyUnitTest(unittest.TestCase):
   def testGetVar(self):
     app = myunit.app.App(400)
     self.assertEquals(app.get_var(), 402)
+
+if __name__ == '__main__':
+    unittest.main()
+
