@@ -1,2 +1,2 @@
-nose
+nose==1.4.1
 git+git://github.com/solanolabs/sphinx#egg=solano-sphinx
