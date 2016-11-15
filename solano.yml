@@ -2,10 +2,9 @@ ruby_version: 'ruby-2.1.2'
 
 python:
   python_version: 2.7
-  #pip_requirements_file: requirements.txt
 
 hooks:
-  package_setup: "pip install -U pip && pip install -r requirements.txt ; echo 'PPIP version='; pip --version"
+  package_setup: "pip install -r requirements.txt && pip install unittest2>1.0"
 
 plan:
 - first
