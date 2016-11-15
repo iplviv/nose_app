@@ -4,7 +4,7 @@ python:
   python_version: 2.7
 
 hooks:
-  package_setup: "pip install -r requirements.txt && pip install unittest2>1.0"
+  package_setup: "pip install -r requirements.txt && pip install 'unittest2>1.0'"
 
 plan:
 - first
